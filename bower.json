@@ -1,0 +1,27 @@
+{
+  "name": "IPL_app",
+  "authors": [
+    "durga598 <durga598@gmail.com>"
+  ],
+  "description": "IPL webapp using jQuery",
+  "main": "index.html",
+  "keywords": [
+    "IPL"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.5",
+    "firebase": "^3.6.2",
+    "flip": "^1.1.2",
+    "jquery": "^3.1.1"
+  }
+}

@@ -1,0 +1,98 @@
+<!--<div class="playerList">
+  <script id="player-template" type="x-handlebars-template">​// {{#each this}}
+
+    //  <div class="col-md-4">
+
+      //    <img class="img-responsive" src="{{player_img_url}}" alt="{{player_name}}">
+      //    <div class="alert alert-info" style="text-align: center;">{{player_name}}
+
+      //</div>
+    //  </div>
+
+      //{{/each}}
+  </script>
+</div>-->
+<!-- <script src="scripts/teamscript.js" charset="utf-8"></script> -->
+<!-- <?php
+$_GET['url']
+console.log($_GET['url']);
+?> -->
+<!-- <div class="single-product page"> -->
+
+<!-- <div class="overlay"></div>
+
+  <div class="preview-large">
+    <img src="" />
+    <p></p>
+
+    <span class="close">×</span>
+  </div> -->
+
+<!-- <script>
+    //   $('.detail').hide();
+    // $('.detail , .detailFront').click(function(){
+    // $('.detail,.detailFront').toggle();
+    // });
+</script> -->
+<script>
+    $(function() {
+        $(".flip").flip({
+            trigger: 'click',
+            axis: 'x',
+
+        });
+    });
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
+</script>
+
+<div class="jumbotron" id="jumbo" style="background-position: right bottom; background-repeat: no-repeat, no-repeat">
+  <h1 id="teamName">Team Name</h1>
+  <p id="teamData"></p>
+</div>
+<div class="playerList">
+    <script id="player-template" type="x-handlebars-template">​ {{#each this}}
+        <div class="flip col-md-6">
+            <div class="detailFront front">
+                <img class="img-responsive" style="max-width:170px;max-height:210px;margin: 0 auto;" src="{{player_img_url}}" alt="{{player_name}}">
+                <div class="alert alert-info" style="text-align: center;">{{player_name}}</div>
+            </div>
+            <div class="back detail">
+                <table class="table table-hover">
+
+                    <tbody>
+                        <tr>
+                            <td>Batting Style</td>
+                            <td>{{player_batting_style}}</td>
+                        </tr>
+                        <tr>
+                            <td>Bowling Style</td>
+                            <td>{{player_bowling_style}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>DOB</td>
+                            <td>{{player_dob}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>Nationality</td>
+                            <td>{{player_nationality}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>Role</td>
+                            <td>{{player_role}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {{/each}}
+    </script>
+</div>
+
+<!-- </div> -->
